@@ -42,6 +42,83 @@ public final class DetetctEntitiesCommand implements BotCommand {
     if(parameters.get("region") == null || parameters.get("region").get() == null) {
       throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","region"));
     }
+    if(parameters.get("region") != null && parameters.get("region").get() != null && !(parameters.get("region").get() instanceof String)) {
+      throw new BotCommandException(MESSAGES_GENERIC.getString("generic.UnexpectedTypeReceived","region", "String", parameters.get("region").get().getClass().getSimpleName()));
+    }
+    if(parameters.get("region") != null) {
+      switch((String)parameters.get("region").get()) {
+        case "us-east-2" : {
+
+        } break;
+        case "us-east-1" : {
+
+        } break;
+        case "us-west-1" : {
+
+        } break;
+        case "us-west-2" : {
+
+        } break;
+        case "ap-east-1" : {
+
+        } break;
+        case "ap-south-1" : {
+
+        } break;
+        case "ap-northeast-3" : {
+
+        } break;
+        case "ap-northeast-2" : {
+
+        } break;
+        case "ap-southeast-1" : {
+
+        } break;
+        case "ap-southeast-2" : {
+
+        } break;
+        case "ap-northeast-1" : {
+
+        } break;
+        case "ca-central-1" : {
+
+        } break;
+        case "cn-north-1" : {
+
+        } break;
+        case "cn-northwest-1" : {
+
+        } break;
+        case "eu-central-1" : {
+
+        } break;
+        case "eu-west-1" : {
+
+        } break;
+        case "eu-west-2" : {
+
+        } break;
+        case "eu-west-3" : {
+
+        } break;
+        case "eu-north-1" : {
+
+        } break;
+        case "me-south-1" : {
+
+        } break;
+        case "sa-east-1" : {
+
+        } break;
+        case "us-gov-east-1" : {
+
+        } break;
+        case "us-gov-west-1" : {
+
+        } break;
+        default : throw new BotCommandException(MESSAGES_GENERIC.getString("generic.InvalidOption","region"));
+      }
+    }
 
     if(parameters.get("access_key_id") == null || parameters.get("access_key_id").get() == null) {
       throw new BotCommandException(MESSAGES_GENERIC.getString("generic.validation.notEmpty","access_key_id"));
