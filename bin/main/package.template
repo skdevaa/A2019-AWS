@@ -1,0 +1,10 @@
+{
+  "name": "AWS",
+  "label": "AWS",
+  "description": "Provides access to Amazon AWS services",
+  "group": "",
+  "artifactName": "",
+  "packageVersion": "",
+  "codeVersion": "",
+  "commands": []
+}
