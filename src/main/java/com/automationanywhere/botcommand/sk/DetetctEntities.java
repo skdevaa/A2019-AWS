@@ -49,7 +49,7 @@ import com.automationanywhere.core.security.SecureString;
 @CommandPkg(label="Named Entities", name="detectentity", description="Detecting Named Entities ", icon="",
 node_label="Detect entities in {{sourceString}} using language {{language}}", return_type=RECORD, return_sub_type = STRING, return_label="Assign the output to variable", return_required=true)
 public class DetetctEntities {
-	
+
 	
 	@Execute
 	public  Value<Record>  action(@Idx(index = "1", type = TEXT) @Pkg(label = "Source string", default_value_type = STRING) @NotEmpty String sourceString,
