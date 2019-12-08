@@ -4,4 +4,4 @@ A2019 Package with actions for <br>
   <li>Amazon Rekognition</li>
   <li>Amazon Comprehend</li>
  </ul>
-# A2019-IBMAWS 
+
